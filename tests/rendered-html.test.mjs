@@ -33,8 +33,9 @@ test("server-renders the portfolio homepage", async () => {
   const html = await response.text();
   assert.match(html, /Muhammad Nazrul bin Ahmad Shukri/);
   assert.match(html, /\.NET Software Engineer/);
-  assert.match(html, /MapHandling Manufacturing API/);
+  assert.match(html, /nazrul-profile-cutout\.webp/);
   assert.match(html, /Open to relocation across Europe/);
+  assert.match(html, /MapHandling Manufacturing API/);
   assert.match(html, /Mindteck \/ Nexperia/);
   assert.doesNotMatch(html, /Your site is taking shape|react-loading-skeleton|codex-preview/);
 });

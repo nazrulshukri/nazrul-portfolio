@@ -229,56 +229,51 @@ export default function Home() {
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
           <a href="#case-studies">Case Studies</a>
+          <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
 
       <section className="hero" id="top">
-        <div className="hero-visual" aria-hidden="true">
-          <div className="factory-map">
-            <span className="map-node node-a">MES</span>
-            <span className="map-node node-b">API</span>
-            <span className="map-node node-c">Oracle</span>
-            <span className="map-node node-d">Equipment</span>
-            <span className="map-line line-a" />
-            <span className="map-line line-b" />
-            <span className="map-line line-c" />
-          </div>
-        </div>
         <div className="section-inner hero-inner">
-          <p className="eyebrow">
-            .NET Software Engineer | Full-Stack Developer | MES & Manufacturing Systems
-          </p>
-          <h1>Muhammad Nazrul bin Ahmad Shukri</h1>
-          <p className="hero-copy">
-            I build reliable enterprise applications, APIs, system integrations,
-            and manufacturing software using C#, .NET, ASP.NET Core, SQL, Oracle,
-            and modern web technologies.
-          </p>
-          <p className="hero-support">
-            Experienced in manufacturing execution systems, real-time equipment
-            workflows, backend integrations, legacy modernization, troubleshooting,
-            and production-critical software.
-          </p>
-          <div className="hero-actions" aria-label="Primary actions">
-            <a className="button primary" href={links.resume} download>
-              <Download size={18} aria-hidden="true" />
-              Download Resume
-            </a>
-            <a className="button secondary" href="#projects">
-              <BriefcaseBusiness size={18} aria-hidden="true" />
-              View Projects
-            </a>
+          <div className="hero-copy-block">
+            <p className="eyebrow">
+              .NET Software Engineer | Full-Stack Developer | MES & Manufacturing Systems
+            </p>
+            <h1>Muhammad Nazrul bin Ahmad Shukri</h1>
+            <p className="hero-copy">
+              I build reliable enterprise applications, APIs, system integrations,
+              and manufacturing software using C#, .NET, ASP.NET Core, SQL, Oracle,
+              and modern web technologies.
+            </p>
+            <p className="hero-support">
+              Experienced in manufacturing execution systems, real-time equipment
+              workflows, backend integrations, legacy modernization, troubleshooting,
+              and production-critical software.
+            </p>
+            <div className="hero-actions" aria-label="Primary actions">
+              <a className="button primary" href={links.resume} download>
+                <Download size={18} aria-hidden="true" />
+                Download Resume
+              </a>
+              <a className="button secondary" href="#projects">
+                <BriefcaseBusiness size={18} aria-hidden="true" />
+                View Projects
+              </a>
+            </div>
+            <div className="hero-meta" aria-label="Availability and location">
+              <span>
+                <MapPin size={16} aria-hidden="true" />
+                Open to relocation across Europe
+              </span>
+              <span>
+                <BadgeCheck size={16} aria-hidden="true" />
+                Backend, full-stack, and manufacturing systems
+              </span>
+            </div>
           </div>
-          <div className="hero-meta" aria-label="Availability and location">
-            <span>
-              <MapPin size={16} aria-hidden="true" />
-              Open to relocation across Europe
-            </span>
-            <span>
-              <BadgeCheck size={16} aria-hidden="true" />
-              Backend, full-stack, and manufacturing systems
-            </span>
+          <div className="hero-portrait" aria-label="Portrait of Muhammad Nazrul">
+            <img src="/nazrul-profile-cutout.webp" alt="Muhammad Nazrul" />
           </div>
         </div>
       </section>
@@ -314,7 +309,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section focus-section">
+      <section className="section focus-section" id="services">
         <div className="section-inner focus-grid">
           {focusAreas.map((area) => (
             <article className="focus-card" key={area.title}>
