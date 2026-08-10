@@ -223,24 +223,32 @@ export default function Home() {
       <nav className="topbar" aria-label="Primary navigation">
         <a className="brand" href="#top" aria-label="Muhammad Nazrul home">
           <span className="brand-mark">N</span>
-          <span>Nazrul</span>
+          <span>Nazrul.dev</span>
         </a>
         <div className="nav-links">
+          <a href="#top">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
           <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#case-studies">Case Studies</a>
+          <a href="#projects">Portfolio</a>
           <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
         </div>
+        <a className="nav-cta" href="#contact">
+          Start Project
+          <ArrowUpRight size={15} aria-hidden="true" />
+        </a>
       </nav>
 
       <section className="hero" id="top">
+        <div className="hero-backdrop" aria-hidden="true" />
         <div className="section-inner hero-inner">
           <div className="hero-copy-block">
             <p className="eyebrow">
-              .NET Software Engineer | Full-Stack Developer | MES & Manufacturing Systems
+              Muhammad Nazrul bin Ahmad Shukri - Software & MES Engineer
             </p>
-            <h1>Muhammad Nazrul bin Ahmad Shukri</h1>
+            <h1>
+              Build reliable <span>digital systems</span> for enterprise and manufacturing.
+            </h1>
             <p className="hero-copy">
               I build reliable enterprise applications, APIs, system integrations,
               and manufacturing software using C#, .NET, ASP.NET Core, SQL, Oracle,
@@ -274,6 +282,10 @@ export default function Home() {
           </div>
           <div className="hero-portrait" aria-label="Portrait of Muhammad Nazrul">
             <img src="/nazrul-profile-cutout.webp" alt="Muhammad Nazrul" />
+            <div className="hero-status-card">
+              <span>Available For</span>
+              <strong>.NET / MES Roles</strong>
+            </div>
           </div>
         </div>
       </section>
