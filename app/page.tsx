@@ -39,8 +39,10 @@ const stack = [
   "Oracle",
   "SQL Server",
   "React",
+  "Next.js",
   "Angular",
   "TypeScript",
+  "MongoDB",
   "AWS",
   "Azure",
   "Docker",
@@ -108,6 +110,20 @@ const experience = [
       "Integrated Microsoft Azure cloud solutions for automated report generation and email delivery.",
     ],
   },
+  {
+    company: "Intercity MPC (M) Sdn. Bhd.",
+    role: "Junior Application Engineer",
+    period: "Jul 2022 - Jul 2023",
+    location: "Kota Kemuning, Selangor",
+    summary:
+      "Supported statement-generation and production output workflows for banking and municipal billing clients.",
+    points: [
+      "Designed and developed banking statement applications using Software Pres Integrated Development Environment, Borland Delphi 7, and Pascal.",
+      "Generated monthly statement data and PDF outputs using Visual FoxPro, Delphi workflows, and database-driven processing.",
+      "Debugged, tested, and stabilized production statement jobs, including migration support from C-based statement logic to Python workflows.",
+      "Handled billing statement tasks for municipal clients and supported production issue resolution.",
+    ],
+  },
 ];
 
 const projects = [
@@ -124,6 +140,13 @@ const projects = [
     tech: ["C#", ".NET Framework", "MES", "CGI/JSON", "PLC/HMI"],
   },
   {
+    title: "Database Diagram / Assembly Recipe Console",
+    type: "Public ASP.NET Core project",
+    text: "Sanitized ASP.NET Core MVC application showing Oracle-backed access control, recipe workspaces, database validation requests, LDAP sign-in, and admin management.",
+    tech: ["ASP.NET Core", ".NET 10", "Oracle", "MVC", "LDAP"],
+    href: "https://github.com/nazrulshukri/ezy2",
+  },
+  {
     title: "DocufloScan Document Automation",
     type: "Enterprise product",
     text: "Backend and scanning workflow improvements for document management, OCR, database lookup, PDF generation, and PDF extraction.",
@@ -137,10 +160,22 @@ const projects = [
     href: "https://projectbookingflex.vercel.app",
   },
   {
-    title: "Cloud Development Track",
-    type: "Cloud project",
-    text: "AWS and Azure-focused engineering growth through cloud training, containerization practice, report automation, and deployable application work.",
-    tech: ["AWS", "Azure", "Docker", ".NET", "CI/CD"],
+    title: "Intercity Statement Automation",
+    type: "Production support project",
+    text: "Statement-generation and billing workflow support using Delphi 7, Pascal, Visual FoxPro, database processing, PDF generation, testing, and production debugging.",
+    tech: ["Delphi 7", "Pascal", "Visual FoxPro", "Python", "PDF"],
+  },
+  {
+    title: "Orbit Key Finder",
+    type: "Tracking application",
+    text: "Key-finder application concept using unique device identifiers and GPS-based tracking flow to help users locate misplaced keys.",
+    tech: ["Mobile app", "GPS", "Tracking flow", "Device ID"],
+  },
+  {
+    title: "Online Conference",
+    type: "Academic web project",
+    text: "Web-based conference project focused on online event flow, user-friendly access, and digital communication for remote participation.",
+    tech: ["Web app", "HTML", "CSS", "JavaScript", "Responsive UI"],
   },
 ];
 
@@ -166,12 +201,62 @@ const skillGroups = [
   {
     icon: Layers3,
     title: "Frontend",
-    items: ["React", "Angular", "TypeScript", "HTML", "CSS", "Responsive UI"],
+    items: ["React", "Angular", "Next.js", "TypeScript", "Tailwind CSS", "Bootstrap"],
   },
   {
     icon: Cloud,
     title: "Cloud & Tools",
     items: ["AWS", "Azure", "Docker", "GitLab", "IIS", "Postman", "SoapUI"],
+  },
+];
+
+const educationItems = [
+  {
+    title: "Bachelor of Information Technology and Communication with Honours",
+    meta: "Open University Malaysia | 2021 - 2026",
+    text: "Part-time degree, CGPA 3.50/4.00.",
+  },
+  {
+    title: "Diploma in Information Technology and Communication (Digital Technology)",
+    meta: "Politeknik Sultan Mizan Zainal Abidin | 2018 - 2020",
+    text: "CGPA 3.04/4.00.",
+  },
+];
+
+const certificationItems = [
+  "AWS Awesome Day - certified by Amazon Web Services.",
+  "AWS-Dev: Developing on AWS - certified by Amazon Web Services, KL Eco City, 2026.",
+  "Flutter Mastery: Building Cross-Platform Mobile Applications - certified by Rynet Malaysia Sdn. Bhd.",
+];
+
+const achievementItems = [
+  "1st Place - 100m Hurdles and 400m Hurdles, MSSD.",
+  "2nd Place and 3rd Place - 400m Hurdles, MSSP.",
+  "1st Place - 4x400m Relay, MSSP.",
+  "Track and Field participation at MSSD, MSSP, and MSSM level.",
+  "Committee Member - Innovation and Design Club, and Hockey Club at Politeknik Sultan Mizan Zainal Abidin.",
+];
+
+const referenceItems = [
+  {
+    name: "Mrs. Noriah Binti Razali",
+    role: "Academic Advisor, Information Technology",
+    organization: "Politeknik Sultan Mizan Zainal Abidin",
+  },
+  {
+    name: "Open University Malaysia",
+    role: "Academic institution reference",
+    organization: "Kelana Centre Point, Petaling Jaya",
+  },
+  {
+    name: "Mr. Khairol Azwan Bin Darmongin",
+    role: "Supervisor",
+    organization: "InfoConnect Sdn. Bhd.",
+  },
+  {
+    name: "Mrs. Nida Binti Arif",
+    role: "Human Resources Malaysia",
+    organization: "Mindteck Sdn. Bhd.",
   },
 ];
 
@@ -232,6 +317,7 @@ export default function Home() {
           <a href="#experience">Experience</a>
           <a href="#projects">Portfolio</a>
           <a href="#skills">Skills</a>
+          <a href="#credentials">Credentials</a>
         </div>
         <a className="nav-cta" href="#contact">
           Start Project
@@ -364,7 +450,7 @@ export default function Home() {
         <div className="section-inner">
           <div className="section-heading compact-heading">
             <p className="eyebrow">Featured Projects</p>
-            <h2>Five portfolio pieces that match your target roles.</h2>
+            <h2>Portfolio pieces that match backend, full-stack, and MES roles.</h2>
           </div>
           <div className="project-grid">
             {projects.map((project) => (
@@ -442,25 +528,64 @@ export default function Home() {
       <section className="section credentials" id="credentials">
         <div className="section-inner credential-grid">
           <div>
-            <p className="eyebrow">Certifications & Education</p>
-            <h2>Continuous growth around cloud, .NET, and enterprise delivery.</h2>
+            <p className="eyebrow">Education, MUET, Certificates & References</p>
+            <h2>Academic foundation, professional learning, and verified references.</h2>
           </div>
-          <div className="credential-list">
+          <div className="credential-list expanded">
             <article>
               <Cpu size={22} aria-hidden="true" />
               <h3>Education</h3>
-              <p>
-                Bachelor of Information Technology and Communication with Honours,
-                Open University Malaysia, CGPA 3.50/4.00. Diploma in Information
-                Technology and Communication, Politeknik Sultan Mizan Zainal Abidin.
-              </p>
+              <div className="credential-items">
+                {educationItems.map((item) => (
+                  <div className="credential-entry" key={item.title}>
+                    <strong>{item.title}</strong>
+                    <span>{item.meta}</span>
+                    <p>{item.text}</p>
+                  </div>
+                ))}
+              </div>
             </article>
             <article>
               <Workflow size={22} aria-hidden="true" />
               <h3>Certifications</h3>
+              <ul className="credential-bullets">
+                {certificationItems.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </article>
+            <article>
+              <BadgeCheck size={22} aria-hidden="true" />
+              <h3>MUET</h3>
               <p>
-                AWS Awesome Day, AWS-Dev Developing on AWS, and Flutter Mastery:
-                Building Cross-Platform Mobile Applications.
+                Malaysian University English Test (MUET), Band 3.5 / 5++.
+                Strong enough for professional communication, technical
+                documentation, and international collaboration.
+              </p>
+            </article>
+            <article>
+              <ShieldCheck size={22} aria-hidden="true" />
+              <h3>Awards & Achievements</h3>
+              <ul className="credential-bullets">
+                {achievementItems.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </article>
+            <article>
+              <Network size={22} aria-hidden="true" />
+              <h3>References</h3>
+              <div className="reference-grid">
+                {referenceItems.map((item) => (
+                  <div className="reference-entry" key={item.name}>
+                    <strong>{item.name}</strong>
+                    <span>{item.role}</span>
+                    <p>{item.organization}</p>
+                  </div>
+                ))}
+              </div>
+              <p className="reference-note">
+                Contact details are available upon request to protect reference privacy.
               </p>
             </article>
           </div>

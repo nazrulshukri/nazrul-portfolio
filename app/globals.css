@@ -795,6 +795,62 @@ p {
   min-height: 180px;
 }
 
+.credential-list.expanded article {
+  min-height: auto;
+}
+
+.credential-items,
+.reference-grid {
+  display: grid;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.credential-entry,
+.reference-entry {
+  border-left: 2px solid rgba(0, 224, 164, 0.55);
+  padding-left: 14px;
+}
+
+.credential-entry strong,
+.reference-entry strong {
+  display: block;
+  color: #ffffff;
+  font-size: 0.98rem;
+  line-height: 1.35;
+}
+
+.credential-entry span,
+.reference-entry span {
+  display: block;
+  margin-top: 5px;
+  color: var(--gold);
+  font-size: 0.86rem;
+  font-weight: 720;
+  line-height: 1.45;
+}
+
+.credential-entry p,
+.reference-entry p {
+  margin: 5px 0 0;
+  font-size: 0.92rem;
+}
+
+.credential-bullets {
+  display: grid;
+  gap: 9px;
+  margin: 16px 0 0;
+  padding-left: 19px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.reference-note {
+  margin-top: 16px;
+  color: rgba(247, 248, 241, 0.6);
+  font-size: 0.9rem;
+}
+
 .contact-section {
   padding: 94px 0;
 }
