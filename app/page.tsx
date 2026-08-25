@@ -333,12 +333,12 @@ export default function Home() {
               Muhammad Nazrul bin Ahmad Shukri - Software & MES Engineer
             </p>
             <h1>
-              Build reliable <span>digital systems</span> for enterprise and manufacturing.
+              Build reliable <span>software systems</span>.
             </h1>
             <p className="hero-copy">
-              I build reliable enterprise applications, APIs, system integrations,
-              and manufacturing software using C#, .NET, ASP.NET Core, SQL, Oracle,
-              and modern web technologies.
+              .NET engineer building enterprise applications, APIs, system
+              integrations, and manufacturing software using C#, ASP.NET Core,
+              SQL, Oracle, and modern web technologies.
             </p>
             <p className="hero-support">
               Experienced in manufacturing execution systems, real-time equipment
