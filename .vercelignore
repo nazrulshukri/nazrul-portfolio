@@ -1,0 +1,13 @@
+.DS_Store
+.env*
+.git
+.next
+.openai
+.vercel
+.vinext
+.wrangler
+dist
+node_modules
+output
+tmp
+vercel-static

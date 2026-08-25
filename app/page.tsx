@@ -333,7 +333,7 @@ export default function Home() {
               Muhammad Nazrul bin Ahmad Shukri - Software & MES Engineer
             </p>
             <h1>
-              Build reliable <span>software systems</span>.
+              Build reliable <span>software systems</span>
             </h1>
             <p className="hero-copy">
               .NET engineer building enterprise applications, APIs, system
